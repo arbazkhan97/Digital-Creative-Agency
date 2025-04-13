@@ -1,0 +1,100 @@
+
+  .header {
+    height: 70vh;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+    background-image: url('/header.png');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color with transparency */
+    background-blend-mode: overlay; /* Blend the background image with the color */
+
+    transition: slide 10s infinite alternate ease-in-out;
+    overflow: hidden; /* Prevent overflow of content */ 
+    
+  }
+
+  @keyframes slide {
+    0% {
+      transform: scale(1);
+      filter: brightness(1);
+    }
+    
+    100% {
+      transform: scale(1.1);
+      filter: brightness(0.8);
+    }
+  }
+
+  .header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .header button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .header .read-more {
+    background-color: #ffffff;
+    color: #1e90ff;
+  }
+  
+  .header .request-quote {
+    background-color: #1e90ff;
+    color: #ffffff;
+  }
+
+  /* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 10px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 2.5em; /* Reduce font size for smaller screens */
+  }
+
+  .header p {
+    font-size: 1em; /* Adjust paragraph text for readability */
+  }
+
+  .header button {
+    padding: 8px 15px;
+    font-size: 1em; /* Scale down buttons */
+    margin: 5px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .header {
+    padding: 20px 10px;
+  }
+
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .header p {
+    font-size: 0.9em;
+  }
+
+  .header button {
+    font-size: 0.9em;
+    padding: 6px 12px;
+  }
+}

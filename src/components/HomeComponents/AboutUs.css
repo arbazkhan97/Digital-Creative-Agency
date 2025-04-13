@@ -1,0 +1,80 @@
+.about-us {
+    display: flex;
+    align-items: start;
+    padding: 50px 20px;
+    gap: 20px;
+    background-color: #383434; /* Adjust background color as needed */
+  }
+  
+  .about-us img {
+    
+    width: 45%;
+    border-radius: 10px;
+  }
+  
+  .about-us-text {
+    width: 50%;
+    
+  }
+  
+  .about-us-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: white;
+    
+  }
+  
+  .about-us-text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    padding-left: 30px;
+    
+    color: rgb(223, 216, 216);
+  }
+
+  /* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; /* Stack content vertically */
+    padding: 30px 10px; /* Reduce padding */
+    text-align: center;
+  }
+
+  .about-us img {
+    width: 80%; /* Adjust image size */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .about-us-text {
+    width: 100%; /* Full width for text */
+  }
+
+  .about-us-text h2 {
+    font-size: 1.8em; /* Slightly smaller heading */
+  }
+
+  .about-us-text p {
+    font-size: 1em; /* Adjust font size for readability */
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .about-us {
+    padding: 20px 5px; /* Reduce padding further for smaller screens */
+  }
+
+  .about-us img {
+    width: 100%; /* Make the image fill the container */
+  }
+
+  .about-us-text h2 {
+    font-size: 1.5em; /* Smaller heading for mobile */
+  }
+
+  .about-us-text p {
+    font-size: 0.9em; /* Slightly smaller paragraph text */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+  }
+}
