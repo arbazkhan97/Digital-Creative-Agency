@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('servicehero.png') no-repeat center center/cover;
+    background: url('/servicehero.png') no-repeat center center/cover;
     color: #ffffff;
     overflow: hidden;
     animation: slide 10s alternate ease-in-out ;
